@@ -1,0 +1,28 @@
+.btn {
+  @apply px-[1rem] py-[0.5rem] rounded-[0.5rem] font-bold border-none;
+  @apply cursor-pointer transition;
+}
+
+.btn_default {
+  @apply bg-[#7fef9e] text-white;
+}
+
+.btn_default:hover {
+  @apply bg-[#6dcf7f];
+}
+
+.btn_gray {
+  @apply bg-[#d9d9d9];
+}
+
+.btn_gray:hover {
+  @apply bg-[#c5c5c5];
+}
+
+.btn_lightGray {
+  @apply bg-[#f5f5f5] font-normal;
+}
+
+.btn_lightGray:hover {
+  @apply bg-[#ececec];
+}

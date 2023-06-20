@@ -1,4 +1,5 @@
 import { FC } from "react";
+import "./Button.css";
 
 interface IButtonProps {
   children: string;
@@ -8,7 +9,7 @@ interface IButtonProps {
 }
 
 const Button: FC<IButtonProps> = ({ children, color, style, onClick }: IButtonProps) => {
-  const styleButton = ["btn", `btn_${color}`, style].join(" ");
+  const styleButton = ["btn", `btn_${color || "default"}`, style].join(" ");
   return <input type="button" value={children} className={styleButton} onClick={onClick} />;
 };
 
