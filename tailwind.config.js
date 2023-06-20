@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        app: "auto 1fr auto",
+      },
+    },
+    fontFamily: {
+      Montserrat: ["montserrat", "Arial", "sans-serif"],
+    },
   },
   plugins: [],
 };
