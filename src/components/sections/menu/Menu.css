@@ -1,5 +1,5 @@
 .menu {
-  @apply flex items-start justify-between gap-4;
+  @apply grid grid-cols-[auto_1fr] gap-4;
 }
 
 .menu-category {

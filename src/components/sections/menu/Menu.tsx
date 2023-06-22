@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./Menu.css";
+import MenuItem from "./MenuItem";
 
 const Menu: FC = () => {
   return (
@@ -13,7 +14,16 @@ const Menu: FC = () => {
         <p className="menu-category-item">Десерты</p>
         <p className="menu-category-item">Напитки</p>
       </div>
-      <div>List</div>
+      <div className="menu-list">
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+      </div>
     </section>
   );
 };
