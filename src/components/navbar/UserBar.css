@@ -1,0 +1,7 @@
+.userBar {
+  @apply flex items-center gap-4;
+}
+
+.userBar-lang {
+  @apply text-[#333] cursor-pointer;
+}
