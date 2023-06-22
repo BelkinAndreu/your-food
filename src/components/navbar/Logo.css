@@ -1,0 +1,8 @@
+.logo {
+  @apply flex items-center gap-2 transition;
+  @apply text-[24px];
+}
+
+.logo:hover {
+  @apply text-[#7FEF9E];
+}

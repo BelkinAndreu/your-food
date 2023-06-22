@@ -1,10 +1,11 @@
 import { FC } from "react";
 import "./Navbar.css";
+import Logo from "./Logo";
 
 const Navbar: FC = () => {
   return (
     <header className="flex items-center justify-between py-4">
-      <p>Logo</p>
+      <Logo />
       <p>Inputs</p>
       <p>User-buttons</p>
     </header>

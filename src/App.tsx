@@ -11,16 +11,16 @@ const App: FC = () => {
         <title>Твоя.Еда - Доставка вкусных блюд</title>
       </Helmet>
 
-      <div className="container">
-        <Navbar />
-        <BrowserRouter>
+      <BrowserRouter>
+        <div className="container">
+          <Navbar />
           <Routes>
             <Route path="*" element={<Navigate to={"/menu"} replace />} />
             <Route path="/menu" element={<MenuPage />} />
           </Routes>
-        </BrowserRouter>
-        <footer>Footer</footer>
-      </div>
+          <footer>Footer</footer>
+        </div>
+      </BrowserRouter>
     </div>
   );
 };
