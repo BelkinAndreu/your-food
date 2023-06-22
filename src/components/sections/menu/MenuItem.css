@@ -1,5 +1,5 @@
 .menu-list {
-  @apply flex items-center justify-center flex-wrap gap-6;
+  @apply flex items-center justify-center flex-wrap gap-6 min-h-[331px];
 }
 
 .menu-item {

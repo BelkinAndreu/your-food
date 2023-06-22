@@ -1,16 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { RootState } from "../store";
-
-type ICategoryProducts = "snack" | "hotDish" | "salad" | "dessert" | "drink";
-
-export interface IProduct {
-  id: number;
-  category: ICategoryProducts;
-  name: string;
-  description: string;
-  price: number;
-  photo: string;
-}
+import { IProduct, productsList } from "../data/productList";
 
 export interface IProductsState {
   counter: number;
@@ -19,16 +8,7 @@ export interface IProductsState {
 
 const initialState: IProductsState = {
   counter: 1,
-  products: [
-    {
-      id: 0,
-      category: "hotDish",
-      name: "Казан - кебаб",
-      description: "Горячее блюдо из мяса и картофеля.",
-      price: 399,
-      photo: "",
-    },
-  ],
+  products: productsList,
 };
 
 export const productsSlice = createSlice({
