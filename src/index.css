@@ -16,3 +16,7 @@
   @apply max-w-[1200px] my-0 mx-auto w-full;
   @apply min-h-screen grid grid-rows-[auto_1fr_auto];
 }
+
+section {
+  @apply py-[40px];
+}
