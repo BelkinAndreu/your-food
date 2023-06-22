@@ -1,8 +1,14 @@
 import { FC } from "react";
 import "./Menu.css";
 import MenuItem from "./MenuItem";
+import { useAppSelector } from "../../../store/hooks";
+import { IProduct } from "../../../store/features/productsSlice";
 
 const Menu: FC = () => {
+  const productsList: IProduct[] = useAppSelector((state) => state.products.products);
+  const renderList = () => {
+    return productsList.map((item) => <MenuItem item={item} key={item.id} />);
+  };
   return (
     <section className="menu">
       <div className="menu-category">
@@ -14,16 +20,7 @@ const Menu: FC = () => {
         <p className="menu-category-item">Десерты</p>
         <p className="menu-category-item">Напитки</p>
       </div>
-      <div className="menu-list">
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-        <MenuItem />
-      </div>
+      <div className="menu-list">{renderList()}</div>
     </section>
   );
 };

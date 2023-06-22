@@ -39,5 +39,4 @@ export const productsSlice = createSlice({
 
 // Action creators are generated for each case reducer function
 export const {} = productsSlice.actions;
-export const selectCount = (state: RootState) => state.counter.value;
 export default productsSlice.reducer;
