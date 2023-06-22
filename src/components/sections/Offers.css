@@ -1,0 +1,16 @@
+.offers {
+  @apply flex items-center justify-center gap-4;
+}
+
+.offers-arrow {
+  @apply text-[#d9d9d9] cursor-pointer w-[30px] h-[30px];
+}
+
+.offers-content {
+  @apply w-[300px] h-[150px] bg-[#d9d9d9] rounded-[1rem] cursor-pointer transition;
+}
+
+.offers-arrow:hover,
+.offers-content:hover {
+  transform: scale(105%);
+}
