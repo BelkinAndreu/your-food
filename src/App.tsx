@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import MenuPage from "./pages/MenuPage";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/Footer";
 
 const App: FC = () => {
   return (
@@ -18,8 +19,8 @@ const App: FC = () => {
             <Route path="*" element={<Navigate to={"/menu"} replace />} />
             <Route path="/menu" element={<MenuPage />} />
           </Routes>
-          <footer>Footer</footer>
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );

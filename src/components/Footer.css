@@ -1,0 +1,7 @@
+.footer {
+  @apply flex items-center justify-center bg-[#7FEF9E] py-4;
+}
+
+.copyright {
+  @apply text-white;
+}
