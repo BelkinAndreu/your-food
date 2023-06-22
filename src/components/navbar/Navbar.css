@@ -1,3 +1,19 @@
 .searchBar {
   @apply flex items-center gap-4;
 }
+
+.searchBar-box {
+  @apply flex items-center gap-2 rounded-[8px] p-1 bg-[#7FEF9E];
+}
+
+.searchBar-input {
+  @apply px-2 py-1 flex items-center gap-2 bg-white rounded-[4px] w-[300px];
+}
+
+.searchBar-input input[type="text"] {
+  @apply outline-0 border-0 w-full;
+}
+
+.searchBar-btn {
+  @apply h-[40px];
+}

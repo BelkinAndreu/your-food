@@ -1,11 +1,14 @@
 import { FC } from "react";
 import Button from "../common/Button";
+import SearchInput from "./SearchInput";
 
 const SearchBar: FC = () => {
   return (
-    <div className="searchBar flex items-center gap-4">
-      <div className="searchBar-input">Input</div>
-      <Button onClick={() => {}}>Укажите адрес доставки</Button>
+    <div className="searchBar">
+      <SearchInput />
+      <Button onClick={() => {}} style="searchBar-btn">
+        Укажите адрес доставки
+      </Button>
     </div>
   );
 };
