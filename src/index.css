@@ -12,9 +12,13 @@
   @apply m-0 p-0 box-border font-Montserrat;
 }
 
+.app {
+  @apply min-h-[100vh] grid grid-rows-[1fr_auto];
+}
+
 .container {
   @apply max-w-[1200px] my-0 mx-auto w-full;
-  @apply min-h-screen grid grid-rows-[auto_1fr_auto];
+  @apply grid grid-rows-[auto_1fr];
 }
 
 section {
