@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import MenuPage from "./pages/MenuPage";
+import Navbar from "./components/navbar/Navbar";
 
 const App: FC = () => {
   return (
@@ -11,7 +12,7 @@ const App: FC = () => {
       </Helmet>
 
       <div className="container">
-        <header>Navigation</header>
+        <Navbar />
         <BrowserRouter>
           <Routes>
             <Route path="*" element={<Navigate to={"/menu"} replace />} />
