@@ -1,9 +1,9 @@
 import { ChangeEvent, FC, useEffect, useState } from "react";
-import Button from "../common/Button";
+import Button from "../../common/Button";
 import Icon from "@mdi/react";
 import { mdiMagnify } from "@mdi/js";
-import { useAppSelector } from "../../store/hooks";
-import { IProduct } from "../../store/data/productList";
+import { useAppSelector } from "../../../store/hooks";
+import { IProduct } from "../../../store/data/productList";
 
 const SearchInput: FC = () => {
   const [input, setInput] = useState<string>("");

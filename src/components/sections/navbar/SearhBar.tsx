@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Button from "../common/Button";
+import Button from "../../common/Button";
 import SearchInput from "./SearchInput";
 
 const SearchBar: FC = () => {
