@@ -4,6 +4,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import MenuPage from "./pages/MenuPage";
 import Navbar from "./components/sections/navbar/Navbar";
 import Footer from "./components/sections/Footer";
+import LoginPage from "./pages/LoginPage";
 
 const App: FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: FC = () => {
           <Routes>
             <Route path="*" element={<Navigate to={"/menu"} replace />} />
             <Route path="/menu" element={<MenuPage />} />
+            <Route path="/login" element={<LoginPage />} />
           </Routes>
         </div>
         <Footer />
